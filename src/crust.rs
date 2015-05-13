@@ -27,7 +27,7 @@ fn main() {
   }
 
   if !matches.free.is_empty() {
-    let pattern = matches.free[0].as_slice();
+    let pattern = &matches.free[0];
 
     let mut files = matches.free.clone();
     files.swap_remove(0); // pop first argument from vector which is a pattern and not a file. 
@@ -35,7 +35,7 @@ fn main() {
       for f in files.iter() {
         let mut s = String::new();
         read_file(f, &mut s);
-        let r = s.as_slice();
+        let r = &s;
 
         for line in r.lines() {
           if line.contains(pattern) {
@@ -64,7 +64,7 @@ fn main() {
 }
 
 fn read_file(f: &String, s: &mut String) {
-  let path = Path::new(f.as_slice());
+  let path = Path::new(&f);
   // TODO: Handle error messages properly.
   let mut file_content = File::open(&path).unwrap();
   file_content.read_to_string(s);
