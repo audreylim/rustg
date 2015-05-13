@@ -1,0 +1,2 @@
+first line from example.txt
+second line from example.txt

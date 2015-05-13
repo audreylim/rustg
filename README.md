@@ -14,8 +14,19 @@ rustc rustg.rs
 
 ### Perform grep
 
-Eg.
+Example:
 
+**1. Target file**
 ```
-rustg line example.rs
+rustg line example.txt
+```
+
+**2. Multiple target files**
+```
+rustg line example.txt example1.txt
+```
+
+**3. Pipe**
+```
+ls | rustg {target text} 
 ```
