@@ -1,6 +1,6 @@
 [package]
 
-name = "crust"
+name = "rustg"
 version = "0.0.1"
 authors = ["Audrey <audreylh@gmail.com>"]
 

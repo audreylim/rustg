@@ -1,6 +1,6 @@
-## Crust
+## Rustg 
 
-Crust is a simple grep utility written in Rust.
+Rustg is a simple grep utility written in Rust.
 
 ### Installation
 
@@ -9,7 +9,7 @@ Crust is a simple grep utility written in Rust.
 ### Compile
 
 ```
-rustc crust.rs
+rustc rustg.rs
 ```
 
 ### Perform grep
@@ -17,5 +17,5 @@ rustc crust.rs
 Eg.
 
 ```
-crust line example.rs
+rustg line example.rs
 ```
